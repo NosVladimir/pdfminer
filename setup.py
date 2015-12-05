@@ -5,14 +5,14 @@ from pdfminer import __version__
 import sys
 
 setup(
-    name='pdfminer.six',
+    name='pdfminer2',
     version=__version__,
     packages=['pdfminer',],
     package_data={'pdfminer': ['cmap/*.pickle.gz']},
     install_requires=['six', 'chardet'] if sys.version_info >= (3, 0) else ['six'],
     description='PDF parser and analyzer',
-    long_description='''fork of PDFMiner using six for Python 2+3 compatibility
-    
+    long_description='''Maintained fork of PDFMiner using six for Python 2+3 compatibility
+
 PDFMiner is a tool for extracting information from PDF documents.
 Unlike other PDF-related tools, it focuses entirely on getting
 and analyzing text data. PDFMiner allows to obtain
@@ -21,10 +21,10 @@ other information such as fonts or lines.
 It includes a PDF converter that can transform PDF files
 into other text formats (such as HTML). It has an extensible
 PDF parser that can be used for other purposes instead of text analysis.''',
-    license='MIT/X',
-    author='Yusuke Shinyama + Philippe Guglielmetti',
-    author_email='pdfminer@goulu.net',
-    url='http://github.com/goulu/pdfminer',
+    license='MIT',
+    author='Chris Hager',
+    author_email='chris@linuxuser.at',
+    url='https://github.com/metachris/pdfminer',
     scripts=[
     'tools/pdf2txt.py',
     'tools/dumppdf.py',
