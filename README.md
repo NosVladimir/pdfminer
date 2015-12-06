@@ -1,21 +1,21 @@
-PDFMiner.six
+PDFMiner2
 ============
 
-PDFMiner.six is a fork of PDFMiner using six for Python 2+3 compatibility
+PDFMiner2 is a maintained fork of PDFMiner using six for Python 2+3 compatibility
 
-[![Build Status](https://travis-ci.org/goulu/pdfminer.svg?branch=master)](https://travis-ci.org/goulu/pdfminer)
+[![Build Status](https://travis-ci.org/metachris/pdfminer.svg?branch=master)](https://travis-ci.org/metachris/pdfminer)
 
 PDFMiner is a tool for extracting information from PDF documents.
-Unlike other PDF-related tools, it focuses entirely on getting 
+Unlike other PDF-related tools, it focuses entirely on getting
 and analyzing text data. PDFMiner allows one to obtain
-the exact location of text in a page, as well as 
+the exact location of text in a page, as well as
 other information such as fonts or lines.
 It includes a PDF converter that can transform PDF files
 into other text formats (such as HTML). It has an extensible
 PDF parser that can be used for other purposes than text analysis.
 
  * Webpage: https://euske.github.io/pdfminer/
- * Download (PyPI): https://pypi.python.org/pypi/pdfminer.six/
+ * Download (PyPI): https://pypi.python.org/pypi/pdfminer2/
  * Demo WebApp: http://pdf2html.tabesugi.net:8080/
 
 
@@ -61,7 +61,7 @@ running setup.py install:
     ...
     $ python setup.py install
 
-On Windows machines which don't have `make` command, 
+On Windows machines which don't have `make` command,
 paste the following commands on a command line prompt:
 
     mkdir pdfminer\cmap
@@ -93,7 +93,7 @@ You cannot extract any text from a PDF document which does not have extraction p
 
 **dumppdf.py**
 
-dumppdf.py dumps the internal contents of a PDF file in pseudo-XML format. 
+dumppdf.py dumps the internal contents of a PDF file in pseudo-XML format.
 This program is primarily for debugging purposes,
 but it's also possible to extract some meaningful contents (e.g. images).
 
@@ -131,30 +131,7 @@ Related Projects
  * <a href="http://mupdf.com/">mupdf</a>
 
 
-Terms and Conditions
---------------------
+License
+-------
 
-(This is so-called MIT/X License)
-
-Copyright (c) 2004-2014  Yusuke Shinyama <yusuke at cs dot nyu dot edu>
-
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or
-sell copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
-KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+MIT
